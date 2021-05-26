@@ -61,5 +61,7 @@ void CSCMul(const tMatrix& A, const matrix& B, int d){
                 result[j][i] = result[j][i] + get<2>(A)[k] * (d*B[get<1>(A)[k]][i]);
             }
         }
-    }printMatrix(result);
+    }
+
+    printMatrix(result);
 }
